@@ -1,8 +1,3 @@
-
-
-
-
-
 export function curso(a,load,div,loading,html){
   $(document).click((e)=>{
     if(e.target.matches(a)){
@@ -49,6 +44,7 @@ export function curso(a,load,div,loading,html){
     }
   })
 }
+
 export function carrera(a,load,div,loading,html){
   $(document).click((e)=>{
     if(e.target.matches(a)){
@@ -72,7 +68,6 @@ export function carrera(a,load,div,loading,html){
             `)
 
             c.pensum.forEach((el,indx)=>{
-
               $('.pensum').append(`
               <li class="list-group-item ">
                 MODULO: ${indx+1}
@@ -182,7 +177,7 @@ function card(item1,item2,item3,item4,item5,id,btn,href){
           <p class="card-text">
           ${item3}
           </p>
-          <a href="${href}" id="${id}" class="btn btn-primary ${btn}">${item4}</a>
+          <btn id="${id}" class="btn btn-primary ${btn}">${item4}</btn>
         </div>
       <div class="card-footer text-body-secondary">
       ${item5}
